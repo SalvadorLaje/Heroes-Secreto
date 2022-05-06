@@ -324,7 +324,7 @@ const heroes = [
 
 const HeroController = {
     index: (req,res)=>{
-        res.render('index')
+        res.render('index', {heroes:heroes})
     },
     detalle: (req,res)=>{
         res.render('detalleHero')
